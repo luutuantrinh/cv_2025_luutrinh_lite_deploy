@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV - LUU TUAN TRINH</title>
+  <style>
+    /* Thiết lập font, kích thước nội dung chính */
+    body {
+      margin: 0; 
+      padding: 20px; 
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: #333;
+      background: #f8f8f8; /* nền xám nhạt cho đỡ trống */
+    }
+
+    /* Khung chứa toàn bộ CV, bao viền đen */
+    .cv-container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      border: 2px solid #000;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+	
+	/* Khung chứa nút để canh giữa */
+    .download-container {
+      text-align: center; 
+      margin-bottom: 20px; /* khoảng cách phía dưới */
+    }
+
+
+    /* Nút download (hoặc in ra PDF) */
+    .download-btn {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    .download-btn:hover {
+      background: #555;
+    }
+
+    /* Phần header (tên, thông tin liên hệ) */
+    .cv-header h1 {
+      font-size: 28px;
+      margin: 0 0 8px 0;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+    }
+    .cv-header .contact-line {
+      font-size: 14px;
+      text-align: center; /* canh giữa dòng liên hệ luôn */
+    }
+    .cv-header .contact-line span {
+      margin-right: 10px;
+    }
+    .cv-header a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    /* Các tiêu đề chính (EDUCATION, EXPERIENCE, SKILLS...) */
+    h2 {
+      font-size: 20px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #000;
+      padding-bottom: 4px;
+    }
+
+    /* Tiêu đề con trong Experience, Skills... */
+    .position-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+    .position-title span {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Danh sách gạch đầu dòng */
+    ul {
+      margin: 0 0 20px 20px;
+      padding: 0;
+    }
+
+    /* Ghi chú nhỏ, team size... */
+    .note {
+      font-style: italic;
+      color: #555;
+    }
+
+    /* Liên kết (Click here) cho chứng chỉ, v.v. */
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+
+    /* Tham chiếu (References) */
+    .references li {
+      margin-bottom: 10px;
+    }
+
+    /* Ẩn nút khi in (nếu muốn) */
+    @media print {
+      .download-btn {
+        display: none;
+      }
+      body {
+        background: #fff;
+      }
+      .cv-container {
+        border: none; /* bỏ viền nếu muốn */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NÚT DOWNLOAD (IN -> PDF) ĐẶT GIỮA -->
+  <div class="download-container">
+    <button class="download-btn" onclick="window.open('https://drive.google.com/file/d/1hph5Io_ojT6c-yoWnrlk__aA-z7hBzD3/view?usp=drive_link', '_blank')">Download CV</button>
+  </div>
+
+  <!-- BAO TOÀN BỘ CV BẰNG cv-container -->
+  <div class="cv-container">
+    <!-- PHẦN HEADER -->
+    <div class="cv-header">
+      <h1>LUU TUAN TRINH</h1>
+      <div class="contact-line">
+        <span>📍 Ho Chi Minh, Vietnam</span> |
+        <span>📱 0388 961 451</span> |
+        <span>✉ <a href="mailto:[email protected]">[email protected]</a></span> |
+        <span>🌐 <a href="https://www.linkedin.com/in/luutuanttrinhdeveloper/">www.linkedin.com/in/luutuanttrinhdeveloper</a></span>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <h2>Education</h2>
+    <p><strong>University of Transport Ho Chi Minh City, Ho Chi Minh, Vietnam (2022 - 2024)</strong></p>
+    <ul>
+      <li>Bachelor of Science in Information Technology - GPA: 3.59/4</li>
+      <li>Relevant coursework: Algorithm Analysis and Design, Database Management System, 
+          Building Management Information Systems, Special Topic on Intelligent Transportation Systems, 
+          Artificial Intelligence (Machine Learning), E-Commerce</li>
+    </ul>
+    <p><strong>Thu Duc College of Technology, Ho Chi Minh, Vietnam (2018 - 2021)</strong></p>
+    <ul>
+      <li>Advanced diploma - Level 5 of VQF in Software Engineering</li>
+      <li>Relevant coursework: Data Structures and Algorithms, Introduction to Computer Engineering, 
+          Database System, Web Development, Computer Organization and Architecture, 
+          Visual Programming with CSha, Software Testing Primary level, Mobile Programming</li>
+    </ul>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <h2>Professional Experience</h2>
+    
+    <div class="position-title">
+      Technical Consultant - FPT Software, Ho Chi Minh 
+      <span>(11/2023 - Now)</span>
+    </div>
+    <ul>
+      <li>SK C&C Korean Project, LG Korean Project, TOPPAN Japan Project</li>
+      <li>Technical: SAP Fiori, SAP S/4 Hana, Testing, Consultant</li>
+      <li>Provide business processing solutions for enterprises, act as a sub-leader to distribute tasks, 
+          handle interface operations for reports, process data in S/4HANA, and ensure data accuracy 
+          for migration from ERP to DMS</li>
+    </ul>
+
+    <div class="position-title">
+      Fullstack Developer - FPT Software, Ho Chi Minh 
+      <span>(06/2022 - 10/2023)</span>
+    </div>
+    <ul>
+      <li>Project MOPCO-SABECO, Project MASAN, Project WILMAR, Project Honda VietNam</li>
+      <li>Technical: Frontend Angular + Backend ASP.NET</li>
+      <li>Provided technical solution features related to reporting, management of FMCG (fast-moving consumer goods) 
+          operations, including diverse operations such as goods, inventory, mapping, etc.</li>
+    </ul>
+
+    <div class="position-title">
+      .NET Developer - Fresher - SoftWorld VN Ltd. Company, Ho Chi Minh 
+      <span>(12/2020 - 05/2021)</span>
+    </div>
+    <ul>
+      <li>Small Function</li>
+      <li>Technical: .NET Framework + Winform</li>
+      <li>Develop a program to accumulate reward points in food supermarkets for the Japanese market</li>
+      <li class="note">Team size: 2</li>
+    </ul>
+
+    <div class="position-title">
+      .NET Developer (C# .NET) - Intern - YouSoft VN Ltd. Company, Ho Chi Minh 
+      <span>(04/2020 - 10/2020)</span>
+    </div>
+    <ul>
+      <li>Technical: Frontend Angular + Backend ASP.NET</li>
+      <li>Development Invoice function and Excel export for web app</li>
+      <li class="note">Team size: 3</li>
+    </ul>
+
+    <!-- PROFESSIONAL SKILLS -->
+    <h2>Professional Skills</h2>
+    <p><strong>Technical Consultant Skills:</strong></p>
+    <ul>
+      <li>SAP Fiori, SAP RAP, SAP S/4 Hana Database, Testing Automation with puppeteer, mocha, Consultant</li>
+      <li>CICD with Jenkins - GIT</li>
+      <li>Excelling with the ability to support SAP technologies such as SAP Fiori, handling solutions 
+          surrounding the SAP ecosystem, and implementing and managing small teams, etc.</li>
+    </ul>
+
+    <p><strong>Full Stack Developer Skills:</strong></p>
+    <ul>
+      <li>Skilled at CSharp, .NET Framework, able to use Angular and ASP.NET Framework with APIs, Angular Front End</li>
+      <li>Able to use database management systems, MySQL and SQL Server, PostgreSQL, Entity Framework</li>
+      <li>Analyze and design systems in Microservices, DDD, CQRS and Event Sourcing, clean Code Principles 
+          and Design Patterns</li>
+      <li>Work with Agile Life Cycle, time management on TMS system, project management on JIRA, 
+          source management with TurtleSVN, TurtlGit</li>
+    </ul>
+
+    <p><strong>Linguistics:</strong> Vietnamese (first language) • English (intermediate level)</p>
+
+    <!-- EXTRA LICENSES & CERTIFICATIONS -->
+    <h2>Extra Licenses & Certifications</h2>
+    <ul>
+      <li>AWS Fundamentals Specialization: <a href="#">Click here</a></li>
+      <li>SQL For Data Science: <a href="#">Click here</a></li>
+    </ul>
+
+    <!-- REFERENCES -->
+    <h2>Reference</h2>
+    <ul class="references">
+      <li>
+        <strong>Tieu Kim Cuong</strong> 
+        (<a href="mailto:[email protected]">[email protected]</a>)<br />
+        Master of Information Technology at IFI (France)
+      </li>
+      <li>
+        <strong>Le Dinh Truong Son</strong> 
+        (<a href="mailto:[email protected]">[email protected]</a>)<br />
+        Technical Lead at VNVC
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
